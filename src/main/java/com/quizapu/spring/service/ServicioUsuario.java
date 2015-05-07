@@ -23,31 +23,35 @@ public class ServicioUsuario {
 	public void setRepositorioUsuario(RepositorioUsuario repositorioUsuario) {
 		this.repositorioUsuario = repositorioUsuario;
 	}
-	
+
 	public long count() {
 		return getRepositorioUsuario().count();
 	}
-	
+
 	public List<Usuario> findAll() {
 		return getRepositorioUsuario().findAll();
 	}
-	
+
 	public Usuario findOne(Integer id) {
 		return getRepositorioUsuario().findOne(id);
 	}
-	
+
 	public List<Usuario> findUsuariosByRut(String rut) {
 		return getRepositorioUsuario().findUsuariosByRut(rut);
 	}
-	
+
+	public List<Usuario> findUsuariosByRutAndContraseña(String rut, String contraseña) {
+		return getRepositorioUsuario().findUsuariosByRutAndContraseña(rut, contraseña);
+	}
+
 	public Usuario save(Usuario usuario) {
 		return getRepositorioUsuario().save(usuario);
 	}
-	
+
 	public void delete(Integer id) {
 		getRepositorioUsuario().delete(id);
 	}
-	
+
 	public void delete(Usuario usuario) {
 		getRepositorioUsuario().delete(usuario);
 	}

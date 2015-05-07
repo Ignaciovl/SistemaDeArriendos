@@ -12,8 +12,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @ComponentScan(basePackages = { "com.onboarding.pos.spring.controller" })
 public class MvcConfig extends WebMvcConfigurerAdapter {
 
-	private static final String VIEW_CONTROLLER = "/index.htm";
-	private static final String VIEW_NAME = "/view/index.jsp";
+	private static final String VIEW_CONTROLLER = "/inicioDeSesion.htm";
+	private static final String VIEW_NAME = "/view/inicioDeSesion.jsp";
 
 	@Override
 	public void addViewControllers(final ViewControllerRegistry registry) {

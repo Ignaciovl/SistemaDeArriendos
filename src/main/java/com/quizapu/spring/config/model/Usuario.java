@@ -57,11 +57,11 @@ public class Usuario {
 		this.rut = rut;
 	}
 
-	public String getContrasenia() {
+	public String getContraseña() {
 		return contraseña;
 	}
 
-	public void setContrasenia(String contrasenia) {
+	public void setContraseña(String contrasenia) {
 		this.contraseña = contrasenia;
 	}
 

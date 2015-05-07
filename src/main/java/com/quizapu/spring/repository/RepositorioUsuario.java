@@ -9,21 +9,24 @@ import org.springframework.stereotype.Repository;
 import com.quizapu.spring.config.model.Usuario;
 
 @Repository
-public interface RepositorioUsuario extends CrudRepository<Usuario, Integer>{
+public interface RepositorioUsuario extends CrudRepository<Usuario, Integer> {
 
 	long count();
-	
+
 	List<Usuario> findAll();
-	
+
 	Usuario findOne(Integer id);
-	
+
 	List<Usuario> findUsuariosByRut(@Param(value = "rut") String rut);
-	
+
+	List<Usuario> findUsuariosByRutAndContraseña(@Param(value = "rut") String rut,
+			@Param(value = "contraseña") String contraseña);
+
 	@SuppressWarnings("unchecked")
 	Usuario save(Usuario usuario);
-	
+
 	void delete(Integer id);
-	
+
 	void delete(Usuario usuario);
 
 }
