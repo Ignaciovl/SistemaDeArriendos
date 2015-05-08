@@ -8,11 +8,17 @@
 <title>Inicio</title>
 </head>
 <body>
-	
+
 	<h1>Inicio</h1>
+	<p>${opcionActivarCuenta}</p>
 	<ul>
-		<li><a style="font-size: 18px"
-			href="cerrarSesion.html" onclick="return confirm('¿Esta seguro de querer cerrar sesion?')">Cerrar Sesion</a></li>
+		<?php if (${opcionActivarCuenta} == 1) { ?>
+  			<li>Activar Cuenta</li>
+		<?php } ?>
+
+		<li><a style="font-size: 18px" href="cerrarSesion.html"
+			onclick="return confirm('¿Esta seguro de querer cerrar sesion?')">Cerrar
+				Sesion</a></li>
 	</ul>
 </body>
 </html>

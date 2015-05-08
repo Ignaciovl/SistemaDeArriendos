@@ -14,5 +14,6 @@
 		Contraseña:<br/> <form:input type="password" path="contraseña"/> <br/>
 		<br/> <input type="submit" value="Iniciar Sesion"/>
 	</form:form>
+	<p style="color: red">${mensaje}</p>
 </body>
 </html>
